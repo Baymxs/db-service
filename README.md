@@ -36,12 +36,24 @@ filesmergesort-1.0-SNAPSHOT.jar`)
       "Голиков",
       "Онищук"
    ],
-   "productCounts":{
-      "Хлеб":5,
-      "Творог":10,
-      "Молоко":2,
-      "Кефир":2
-   },
+   "productCounts":[
+      {
+         "name":"Хлеб",
+         "count":5
+      },
+      {
+         "name":"Творог",
+         "count":10
+      },
+      {
+         "name":"Молоко",
+         "count":2
+      },
+      {
+         "name":"Кефир",
+         "count":2
+      }
+   ],
    "minMaxPrice":[
       {
          "min":1,
@@ -320,7 +332,6 @@ filesmergesort-1.0-SNAPSHOT.jar`)
 
 `output.json`
 ```json
-
 ```
 # License
 ----
