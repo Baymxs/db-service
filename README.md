@@ -4,9 +4,8 @@ Database service is a Java program that provides a service for working with data
 
 # Installation
 ---
-- Build the project yourself
-- [Download](https://drive.google.com/file/d/1R2GtZ-10nYxeZtzFh1tsYy33FPydwUaK/view?usp=sharing) Jar File (`java -jar 
-filesmergesort-1.0-SNAPSHOT.jar`)
+- Build the project by Maven (mvn clean compile assembly:single)
+- [Download](https://drive.google.com/file/d/1_g4ljuvsWxLQjW3JxB6wclENlb4jR94L/view?usp=sharing) Jar File (`dbservice-1.0-SNAPSHOT-jar-with-dependencies`)
 # Usage
 ---
 ### Flags
@@ -332,6 +331,82 @@ filesmergesort-1.0-SNAPSHOT.jar`)
 
 `output.json`
 ```json
+{
+   "personPurchases":[
+      {
+         "person":{
+            "lastName":"Байрамов",
+            "name":"Нижад"
+         },
+         "purchases":{
+            "Курина приправа":13,
+            "Хлеб":27,
+            "Мюсли":220,
+            "Гречневая крупа":56,
+            "Консервированные ананасы":97,
+            "Молоко":94,
+            "Куриное филе":440,
+            "Кефир":37
+         },
+         "totalExpense":984
+      },
+      {
+         "person":{
+            "lastName":"Караваев",
+            "name":"Григорий"
+         },
+         "purchases":{
+            "Гречневая крупа":112,
+            "Консервированные ананасы":97,
+            "Молоко":94,
+            "Куриное филе":440
+         },
+         "totalExpense":743
+      },
+      {
+         "person":{
+            "lastName":"Караваев",
+            "name":"Антон"
+         },
+         "purchases":{
+            "Курина приправа":13,
+            "Хлеб":27,
+            "Мюсли":110,
+            "Кефир":37
+         },
+         "totalExpense":187
+      },
+      {
+         "person":{
+            "lastName":"Онищук",
+            "name":"Дмитрий"
+         },
+         "purchases":{
+            "Курина приправа":13,
+            "Хлеб":27,
+            "Консервированные ананасы":97,
+            "Куриное филе":220
+         },
+         "totalExpense":357
+      },
+      {
+         "person":{
+            "lastName":"Синицын",
+            "name":"Данил"
+         },
+         "purchases":{
+            "Хлеб":27,
+            "Мюсли":110,
+            "Гречневая крупа":56,
+            "Молоко":47
+         },
+         "totalExpense":240
+      }
+   ],
+   "totalExpense":2511,
+   "avgExpense":502.2,
+   "type":"stat"
+}
 ```
 # License
 ----
